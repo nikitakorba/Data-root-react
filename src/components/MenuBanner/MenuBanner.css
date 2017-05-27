@@ -1,0 +1,27 @@
+@import '../variables.css';
+
+.root {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bannerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.languageSwitch {
+  font-size: 1.125em; /* ~18px */
+}

@@ -1,0 +1,30 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.link {
+  margin-bottom: 0.625em; /* ~10px */
+  font-size: 1.250em; /* ~20px */
+  line-height: 2em;
+  font-weight: 500;
+  border-bottom: 2px solid #3C3C43;
+  text-decoration: none;
+}
+
+.link,
+.link:active,
+.link:visited {
+  color: rgba(60, 60, 67, 1); /* #3C3C43 */
+}
+
+.link:hover {
+  color: rgba(60, 60, 67, 0.7);
+  border-bottom: 2px solid rgba(60, 60, 67, 0.7);
+  transition: 0.2s;
+}
+
+
+

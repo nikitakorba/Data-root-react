@@ -1,0 +1,57 @@
+@import '../variables.css';
+
+.root {
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--screen-lg-min);
+}
+
+.item {
+  margin: 0 40px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 3.000em; /* ~48px */
+}
+
+.text {
+  font-size: 1.250em; /* ~20px */
+  margin-bottom: 30px;
+}
+
+.text > p {
+  padding-bottom: 20px;
+}
+
+.link {
+  margin-right: 60px;
+  padding-bottom: 0.625em; /* ~10px */
+  font-size: 1.250em; /* ~20px */
+  text-decoration: none;
+  border-bottom: 2px solid #3C3C43;
+}
+
+.link,
+.link:active,
+.link:visited {
+  color: rgba(60, 60, 67, 1); /* #3C3C43 */
+}
+
+.link:hover {
+  color: rgba(60, 60, 67, 0.7);
+  border-bottom: 2px solid rgba(60, 60, 67, 0.7);
+  transition: 0.2s;
+}

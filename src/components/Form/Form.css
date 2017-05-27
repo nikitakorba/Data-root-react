@@ -1,0 +1,44 @@
+.formContent {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.formInput {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  min-height: 55px;
+  min-width: 320px;
+  color: #3c3c43;
+  border: 2px solid #3c3c43;
+  background-color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.formInput::placeholder {
+  font-size: 20px;
+  color: #3c3c43;
+}
+
+.formTextarea {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  min-height: 120px;
+  min-width: 320px;
+  color: #3c3c43;
+  border: 2px solid #3c3c43;
+  background-color: white;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.formTextarea::placeholder {
+  font-size: 20px;
+  color: #3c3c43;
+}

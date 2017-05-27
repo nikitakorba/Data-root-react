@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 220px;
+}
+
+.link {
+  margin-bottom: 1.750em; /* ~28px */
+  text-decoration: none;
+  font-size: 1.250em; /* ~20px */
+  line-height: 1.25em;
+  font-weight: 500;
+}
+
+.link,
+.link:active,
+.link:visited {
+  color: #747880; 
+}
+
+.link:hover {
+  color: rgba(60, 60, 67, 1);
+  transition: 0.2s;
+}
+
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "Instagram",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Instagram.js"
+}

@@ -1,0 +1,26 @@
+@import '../variables.css'; 
+
+:root {
+ 
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F0DD;
+  min-width: 917px; 
+  width: 100%;
+  height: 409px;
+}
+
+.bannerTitle {
+  font-size: 3.375em; /* ~54px */
+  text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .banner {
+    min-width: 300px;
+  }
+}

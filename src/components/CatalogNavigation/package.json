@@ -1,0 +1,6 @@
+{
+  "name": "CatalogNavigation",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CatalogNavigation.js"
+}

@@ -1,0 +1,11 @@
+.btnResponsive {
+  cursor: pointer;
+  width: 100%;
+  max-width: 500px;
+  min-width: 320px;
+  min-height: 50px;
+  color: white;
+  background: #3c3c43;
+  outline: none;
+  border: 0;
+}

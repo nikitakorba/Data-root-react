@@ -1,0 +1,53 @@
+@import '../variables.css';
+
+.root {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 900px;
+  margin: 120px auto;
+}
+
+.header {
+  font-size: 3em; /* ~48px */ 
+}
+
+.wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 355px;
+  margin-top: 30px;
+}
+
+.link {
+  padding-bottom: 0.625em; /* ~10px */
+  font-size: 1.250em; /* ~20px */
+  text-decoration: none;
+  border-bottom: 2px solid #3C3C43;
+}
+
+.link,
+.link:active,
+.link:visited {
+  color: rgba(60, 60, 67, 1); /* #3C3C43 */
+}
+
+.link:hover {
+  color: rgba(60, 60, 67, 0.7);
+  border-bottom: 2px solid rgba(60, 60, 67, 0.7);
+  transition: 0.2s;
+}
+
