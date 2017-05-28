@@ -5,7 +5,17 @@
   min-width: 320px;
   min-height: 50px;
   color: white;
-  background: #3c3c43;
   outline: none;
   border: 0;
+}
+
+.btnResponsive,
+.btnResponsive:active,
+.btnResponsive:visited {
+  background-color: #3c3c43;
+}
+
+.btnResponsive:hover {
+  background-color: rgba(60, 60, 67, 0.7);
+  transition: 0.2s;
 }
