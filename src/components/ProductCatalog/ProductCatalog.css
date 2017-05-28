@@ -20,7 +20,6 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap; 
-  
 }
 
 .item {
@@ -51,3 +50,19 @@
   transition: 0.2s;
 }
 
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+  }
+  .item {
+    padding-right: 30px;
+  }
+}
