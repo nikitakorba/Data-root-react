@@ -15,7 +15,7 @@
 }
 
 .container {
-  margin: 0 auto;
+  margin: 150px auto;
   padding: 20px 15px;
   max-width: var(--screen-lg-min);
   text-align: center;
@@ -42,4 +42,8 @@
 
 .content {
   text-align: center;
+}
+
+.btnWrapper {
+  margin: 25px 0 0;
 }
