@@ -11,14 +11,17 @@ class MenuBanner extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
+      
           <div className={s.bannerWrapper}>
             <Banner />
             <div className={s.btnWrapper}> 
               <div className={s.languageSwitch}><a>укр</a> / <a>рус</a></div>
-              <WhiteButton children="Зв’язатись з нами"/>
+              <WhiteButton>Зв’язатись з нами</WhiteButton>
             </div>
           </div>
+        
           <Menu />
+      
         </div>
       </div>
     );
