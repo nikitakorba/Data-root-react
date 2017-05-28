@@ -9,7 +9,7 @@ class Contact extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <p className={s.contactHeader}>Виготовимо наступний шедевр разом</p>
+          <h2 className={s.contactHeader}>Виготовимо наступний шедевр разом</h2>
           <p className={s.contactText}>Зв’яжіться з нами та дізнайтесь більше</p>
           <Form />
         </div>

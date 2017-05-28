@@ -12,7 +12,7 @@ class Instagram extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <p className={s.instagramHeader}>Краще один раз подивитись</p>
+          <h2 className={s.instagramHeader}>Краще один раз подивитись</h2>
           <p className={s.instagramText}>Фото проектів з нашого Instagram</p>
           <div className={s.imageContainer}>
             <div className={s.content}>
@@ -52,10 +52,11 @@ class Instagram extends React.Component {
               <p>#onyx #m-selection</p>
             </div>
           </div>
-          <WhiteButton>
-          Всі проекти
-          </WhiteButton>
-
+          <div className={s.btnWrapper}>
+            <WhiteButton>
+            Всі проекти
+            </WhiteButton>
+          </div>
         </div>
       </div>
     );
