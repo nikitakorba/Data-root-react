@@ -11,8 +11,8 @@ class AboutUs extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <div>
-            <img src={about} srcSet={`${about}`} width="441" height="535" alt="logo" />
+          <div className={s.imageWrapper}>
+            <img src={about} srcSet={`${about}`} width="100%" className={s.image} alt="logo" />
           </div>
           
           <div className={s.item + ' ' + s.wrapper}>
@@ -29,7 +29,7 @@ class AboutUs extends React.Component {
               <p>Найважливіше для нас – ваше естетичне задоволення, тож ми гарантуємо якість нашої роботи та 
               дотримання термінів виконання.</p>
             </div>
-            <div>
+            <div className={s.linkWrapper}>
               <Link to="/more_details" className={s.link}>Детальніше</Link>
               <Link to="/view_works" className={s.link}>Переглянути роботи</Link>
             </div>
