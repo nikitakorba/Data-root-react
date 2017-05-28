@@ -4,7 +4,7 @@ import s from './Contact.css';
 import Form from '../Form';
 
 class Contact extends React.Component {
-
+  
   render() {
     return (
       <div className={s.root}>

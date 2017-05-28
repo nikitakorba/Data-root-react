@@ -14,6 +14,8 @@ import Instagram from '../Instagram';
 import Contact from '../Contact';
 import Footer from '../Footer';
 
+import Catalog from '../Catalog';
+
 
 
 class Layout extends React.Component {
@@ -26,8 +28,13 @@ class Layout extends React.Component {
       <div>
         <Header />
         <MenuBanner />
+      
+        <Catalog header="Каталог продукції"/>
+      
         <ProductCatalog />
-        <AboutUs />
+        
+        {this.props.children}
+      
         <Instagram />
         <Contact />
         <Footer /> 

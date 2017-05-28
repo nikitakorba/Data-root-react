@@ -9,7 +9,7 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Page from '../../components/Page';
+import AboutUs from '../../components/AboutUs';
 
 export default {
 
@@ -21,7 +21,7 @@ export default {
     return {
       title: data.title,
       chunk: 'about',
-      component: <Layout><Page {...data} /></Layout>,
+      component: <Layout><AboutUs {...data} /></Layout>,
     };
   },
 

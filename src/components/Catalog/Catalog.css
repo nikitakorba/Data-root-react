@@ -1,0 +1,16 @@
+@import '../variables.css';
+
+.root {
+  height: 500px;
+  background-color: beige;
+  margin: 0 auto;
+  width: var(--max-content-width);
+}
+
+.container {
+  
+}
+
+.title {
+  font-size: 3em; /* ~48px */
+}

@@ -35,14 +35,14 @@ class Html extends React.Component {
   render() {
     const { title, description, styles, scripts, app, children } = this.props;
     return (
-      <html className="no-js" lang="en">
+      <html className="no-js" lang="ua">
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <title>{title}</title>
           <meta name="description" content={description} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+          <link rel="workroom" href="workroom.svg" />
           <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" />
           
