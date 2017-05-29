@@ -14,9 +14,7 @@ class Catalog extends React.Component {
       
           <h3> {this.props.section} <h3>
           <div className={s.imageContainer}>
-            <img> {this.props.src} </img>
-      
-            <img src={} srcSet={`${ }`} width="48" height="133" alt="logo" />
+          
           </div>
                
       
