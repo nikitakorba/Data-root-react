@@ -31,3 +31,8 @@
   width: 100%;
   border-top: 1px solid black;
 }
+
+.link {
+  padding-left: 30px;
+  font-size: 1em; /* ~16px */
+}

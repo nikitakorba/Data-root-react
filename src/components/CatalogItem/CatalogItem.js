@@ -10,7 +10,6 @@ class CatalogItem extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRejected,
     
-    
     altText: PropTypes.string.isRequired,
   };
 
@@ -22,6 +21,8 @@ class CatalogItem extends React.Component {
             source3, altText3,
             source4, altText4,
             source5, altText5,
+            navTitle,
+            navLink, navLink2, navLink3, navLink4, navLink5, navLink6,   
           } = this.props;
     
     
@@ -34,9 +35,15 @@ class CatalogItem extends React.Component {
           </div>
           
           <div className={s.leftContainer}>
-            <div> 
-      
-            </div>
+            <div className={s.catalogNav}> 
+              {navTitle}
+              <a classNAme={s.link}> {navLink} </a>
+              <a classNAme={s.link}> {navLink2} </a>
+              <a classNAme={s.link}> {navLink3} </a>
+              <a classNAme={s.link}> {navLink4} </a>
+              <a classNAme={s.link}> {navLink5} </a>
+              <a classNAme={s.link}> {navLink6} </a>
+              </div>
       
             <div className={s.imageWrapper}>
               <img src={source} alt={altText} />

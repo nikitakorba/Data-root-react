@@ -5,6 +5,7 @@ import s from './Catalog.css';
 import Link from '../Link';
 
 
+
 import CatalogItem from '../CatalogItem';
 
 import img from './img.png';
@@ -37,10 +38,17 @@ class Catalog extends React.Component {
               source3 = {img3} altText3="img3" 
               source4 = {img4} altText4="img4" 
               source5 = {img5} altText5="img5"
+              navTitle = {"Вид каменю: "}
+              navLink = {"мармур"}
+              navLink2 = {"граніт"}
+              navLink3 = {"пісковик"}
+              navLink4 = {"вапняк"}
+              navLink5 = {"квацит"}
+              navLink6 = {"онікс"}
             />
       
             <CatalogItem 
-            title = {"Складні архітектурні вироби"}
+              title = {"Складні архітектурні вироби"}
               source = {block2_img} altText="img" 
               source2 = {block2_img2} altText2="img2"
               source3 = {block2_img3} altText3="img3" 
@@ -49,6 +57,7 @@ class Catalog extends React.Component {
             <CatalogItem 
               title = {"Садово-паркове мистецтво"}
               source = {block3_img} altText="img"
+              linkTitle = "abc"
             />
           </div>
                
