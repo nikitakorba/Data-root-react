@@ -8,20 +8,21 @@
  */
 
 import React from 'react';
+import Header from '../../components/Header';
 import Layout from '../../components/Layout';
-import AboutUs from '../../components/AboutUs';
+import MenuBanner from '../../components/MenuBanner';
 
 export default {
 
   path: '/about',
 
   async action() {
-    const data = await require.ensure([], require => require('./about.md'), 'about');
-
     return {
-      title: data.title,
-      chunk: 'about',
-      component: <Layout><AboutUs {...data} /></Layout>,
+      title: 'Про нас',
+      component: 
+        <Layout>
+          <Header />
+        </Layout>,
     };
   },
 

@@ -9,7 +9,12 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
+
+import Header from '../../components/Header';
+import MenuBanner from '../../components/MenuBanner';
+import ProductCatalog from '../../components/ProductCatalog';
 import AboutUs from '../../components/AboutUs';
+import Instagram from '../../components/Instagram';
 
 
 export default {
@@ -17,12 +22,14 @@ export default {
   path: '/',
 
   async action() {
-    const data = await require.ensure([], require => require('./about.md'), 'about');
-
     return {
-      title: data.title,
-      chunk: 'about',
-      component: <Layout><AboutUs {...data} /></Layout>,
+      component:  
+        <Layout>
+        <Header />
+        <MenuBanner />
+        <ProductCatalog />
+        <Instagram />
+        </Layout>,
     };
   },
 
