@@ -5,12 +5,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 // external-global styles must be imported in your JS.
 import normalizeCss from 'normalize.css';
 import s from './Layout.css';
-
-import Header from '../Header';
-import MenuBanner from '../MenuBanner';
-import ProductCatalog from '../ProductCatalog';
 import AboutUs from '../AboutUs';
-import Instagram from '../Instagram';
 import Contact from '../Contact';
 import Footer from '../Footer';
 
@@ -25,14 +20,9 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div>
-        <Header />
-        <MenuBanner />
-        <ProductCatalog />
-        
+      <div>  
         {this.props.children}
-      
-        <Instagram />
+        <AboutUs />
         <Contact />
         <Footer /> 
       </div>
