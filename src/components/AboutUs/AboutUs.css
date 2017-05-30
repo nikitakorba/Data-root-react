@@ -1,7 +1,7 @@
 @import '../variables.css';
 
 .root {
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: var(--max-content-width);
 }
 
