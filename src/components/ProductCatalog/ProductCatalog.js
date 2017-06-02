@@ -11,6 +11,34 @@ import portrait from './portrait.png';
 import sculpture  from './sculpture.png';
 import table from './table.png';
 
+const ProductCatalogData = [
+  {
+    link: "/portrait",
+    text: "Портрети",
+    img: portrait,
+    alt: "portrait"
+  },
+  {
+    link: "/sculptur",
+    text: "Скульптури",
+    img: sculpture,
+    alt: "sculpture"
+  },
+  {
+    link: "/fireplaces",
+    text: "Каміни",
+    img: fireplaces,
+    alt: "fireplaces"
+  },
+  {
+    link: "/table",
+    text: "Столешні",
+    img: table,
+    alt: "table"
+  },
+  
+]
+
 class ProductCatalog extends React.Component {
   render (){
     return (
@@ -25,25 +53,14 @@ class ProductCatalog extends React.Component {
               <WhiteButton children="Каталог продукції"/>
             </div>
       
-            <div className={s.item}> 
-              <Photo source={portrait} altText="portrait" />
-              <Link to="/portrait" className={s.link}>Портрети</Link>
-            </div>
-      
-            <div className={s.item}>
-              <Photo source={sculpture} altText="sculpture" />
-              <Link to="/sculpture" className={s.link}>Скульптури</Link>
-            </div>
-            
-            <div className={s.item}>
-              <Photo source={fireplaces} altText="fireplaces" />
-              <Link to="/fireplaces" className={s.link}>Каміни</Link>
-            </div>
-            
-            <div className={s.item}>
-              <Photo source={table} altText="table" />
-              <Link to="/table" className={s.link}>Столешні</Link>
-            </div>
+            {
+              ProductCatalogData.map(elem =>
+                <div className={s.item}> 
+                  <Photo source={elem.img} altText={elem.alt} />
+                  <Link to={elem.link} className={s.link}> {elem.text} </Link>
+                </div>
+              )
+            }
       
           </div>
       

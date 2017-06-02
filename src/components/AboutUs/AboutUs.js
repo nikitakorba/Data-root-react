@@ -8,13 +8,10 @@ import Link from '../Link';
 import about from './about.png';
 
 class AboutUs extends React.Component {
-   static propTypes = {
-    title: PropTypes.string.isRequired,
-    html: PropTypes.string.isRequired,
-  };
+  
 
   render() {
-    const { title, html } = this.props;
+    
     return (
       <div className={s.root}>
         <div className={s.container}>
