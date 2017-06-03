@@ -2,15 +2,80 @@
 
 .root {
   height: auto;
-  
   margin: 0 auto;
   max-width: var(--max-content-width);
 }
 
 .container {
-  
+  display: flex;
+  flex-direction: row;
+}
+
+.rootInner {
+  margin: 30px auto;
+}
+
+.containerInner {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
 }
 
 .title {
   font-size: 3em; /* ~48px */
+}
+
+.titleWrapper {
+  max-width: 380px;
+  width: 100%;
+  font-size: 1.5em; /* ~24px */
+  margin-bottom: 10px;
+}
+
+.imageWrapper { 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 420px;
+  width: 100%;
+}
+
+.imageWrapper > img {
+  padding: 10px;
+}
+
+.leftContainer {
+  min-width: 880px;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.link {
+  padding-left: 30px;
+  font-size: 1em; /* ~16px */
+}
+
+@media (max-width: 1100px) {
+  .containerInner {
+    flex-direction: column;
+  }
+  
+  .titleWrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .imageWrapper {
+    
+  }
+  
+  .leftContainer { 
+    min-width: 400px;
+  }
+  .imageWrapper > img {
+    
+  }
 }

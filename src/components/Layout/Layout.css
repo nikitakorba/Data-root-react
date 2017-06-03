@@ -23,6 +23,7 @@
 }
 
 html {
+  box-sizing: border-box;
   color: #3C3C43;
   font-weight: 100;
   font-size: 1em; /* ~16px; */
