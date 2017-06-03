@@ -4,10 +4,6 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Catalog.css';
 import Link from '../Link';
 
-
-
-import CatalogItem from '../CatalogItem';
-
 import img from './img.png';
 import img2 from './img2.png';
 import img3 from './img3.png';
@@ -20,48 +16,135 @@ import block2_img3 from './block2_img3.png';
 
 import block3_img from './block3_img.png';
 
+const CatalogData = [
+  { 
+    id: 1,
+    title: "Внутрішнє та зовнішнє оздоблення", 
+    img: [
+      {
+        id: 10,
+        source: img, 
+        altText: "img",
+        width: "280",
+        height: "420"
+      },
+      {
+        id: 11,
+        source: img2, 
+        altText: "img2",
+        width: "180",
+        height: "220"
+      },
+       {
+        id: 12,
+        source: img3, 
+        altText: "img3",
+        width: "180",
+        height: "180"
+      },
+       {
+        id: 13,
+        source: img4, 
+        altText: "img4",
+        width: "380",
+        height: "160"
+      },
+       {
+        id: 14,
+        source: img5, 
+        altText: "img5",
+        width: "380",
+        height: "240"
+      }
+    ]
+  },
+  
+  {
+    id: 2,
+    title: "Складні архітектурні вироби", 
+    img: [
+      { 
+        id: 20,
+        source: block2_img, 
+        altText: "img",
+        width: "208",
+        height: "387"
+      },
+      {
+        id: 21,
+        source: block2_img2, 
+        altText: "img2",
+        width: "283",
+        height: "387"
+      },
+      {
+        id: 22,
+        source: block2_img3, 
+        altText: "img3",
+        width: "357",
+        height: "383"
+      },
+    ]
+  },
+  
+  {
+    id: 3,
+    title: "Садово-паркове мистецтво", 
+    img: [
+      { 
+        id: 30,
+        source: block3_img, 
+        altText: "img",
+        width: "860",
+        height: "387"
+      }
+    ]
+  }
+  
+];
+
 class Catalog extends React.Component {
   render () {
     return (
       <div className={s.root}>
         <div className={s.container}>
           
-          <h2 className={s.title}> {this.props.header} </h2>
-      
-          <h3> {this.props.section} </h3>
-      
-          <div>  
-            <CatalogItem  
-              title = {"Внутрішнє та зовнішнє оздоблення"}
-              source = {img} altText="img" 
-              source2 = {img2} altText2="img2"
-              source3 = {img3} altText3="img3" 
-              source4 = {img4} altText4="img4" 
-              source5 = {img5} altText5="img5"
-              navTitle = {"Вид каменю: "}
-              navLink = {"мармур"}
-              navLink2 = {"граніт"}
-              navLink3 = {"пісковик"}
-              navLink4 = {"вапняк"}
-              navLink5 = {"квацит"}
-              navLink6 = {"онікс"}
-            />
-      
-            <CatalogItem 
-              title = {"Складні архітектурні вироби"}
-              source = {block2_img} altText="img" 
-              source2 = {block2_img2} altText2="img2"
-              source3 = {block2_img3} altText3="img3" 
-            />
-      
-            <CatalogItem 
-              title = {"Садово-паркове мистецтво"}
-              source = {block3_img} altText="img"
-              linkTitle = "abc"
-            />
+          
+
+          <div className={s.rootInner}>  
+            {
+              CatalogData.map(function(elem) {
+                
+                let img = elem.img.map(function(image){
+                  return (
+                     <img key={image.id} 
+                          src={image.source} 
+                          alt={image.altText} 
+                          width={image.width} 
+                          height={image.height}
+                      />
+                  )
+                });
+    
+                return (
+                  <div key={elem.id}>
+                    <div className={s.containerInner}>
+                  
+                      <div className={s.titleWrapper}>
+                        <p > {elem.title} </p>
+                      </div>
+                  
+                      <div className={s.leftContainer}>
+                        <div className={s.imageWrapper}> {img} </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                )
+              })
+            }
           </div>
-               
-      
+          
         </div>
       </div>
     );
