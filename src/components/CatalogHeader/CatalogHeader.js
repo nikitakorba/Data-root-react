@@ -11,6 +11,7 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './CatalogHeader.css';
 import WhiteButton from '../WhiteButton';
+import Link from '../Link';
 
 
 class Header extends React.Component {
@@ -29,7 +30,7 @@ class Header extends React.Component {
     return (
       <div className={s.root}>
         <div className={this.state.active ? s.responsive : s.container}>
-          <h1 className={s.brandName}>Майстерня</h1>
+          <Link to="/"><h1 className={s.brandName}>Майстерня</h1></Link>
           <div className={s.contactInfo}>
             <p className={s.telNumber}>+38 066 445 59 00</p>
             <p className={s.delivery}>Доставка по Україні</p>
