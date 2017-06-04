@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Catalog.css';
 import Link from '../Link';
+import CatalogHeader from '../CatalogHeader';
 
 import img from './img.png';
 import img2 from './img2.png';
@@ -143,7 +144,10 @@ class Catalog extends React.Component {
   render () {
     return (
       <div className={s.root}>
+      
+        <CatalogHeader />
         <h1 className={s.title}>Каталог продукції</h1>
+      
         <div className={s.container}>
         
           <div className={s.rootInner}>  
@@ -178,7 +182,7 @@ class Catalog extends React.Component {
                 return (
                   <div key={elem.id}>
                     <div className={s.containerInner}>
-                  
+                
                       <div className={s.titleWrapper}>
                         <p > {elem.title} </p>
                       </div>
