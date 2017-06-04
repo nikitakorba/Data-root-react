@@ -40,6 +40,17 @@
   justify-content: space-around;
 }
 
+img {
+  padding-right: 10px;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 .content {
   text-align: center;
 }
