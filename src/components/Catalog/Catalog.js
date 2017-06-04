@@ -48,7 +48,7 @@ const CatalogData = [
         to: "/catalog"
       },
       {
-        id: 104,
+        id: 105,
         name: "онікс",
         to: "/catalog"
       }
@@ -143,10 +143,9 @@ class Catalog extends React.Component {
   render () {
     return (
       <div className={s.root}>
+        <h1 className={s.title}>Каталог продукції</h1>
         <div className={s.container}>
-          
-          
-
+        
           <div className={s.rootInner}>  
             {
               CatalogData.map(function(elem) {

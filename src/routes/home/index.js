@@ -28,6 +28,7 @@ export default {
         <Header />
         <MenuBanner />
         <ProductCatalog />
+        <AboutUs />
         <Instagram />
         </Layout>,
     };

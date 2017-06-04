@@ -12,7 +12,7 @@
 }
 
 .rootInner {
-  margin: 30px auto;
+  //margin: 0px auto 30px;
 }
 
 .containerInner {
@@ -23,6 +23,7 @@
 
 .title {
   font-size: 3em; /* ~48px */
+  margin: 20px 30px;
 }
 
 .titleWrapper {

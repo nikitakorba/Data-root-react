@@ -22,7 +22,7 @@ class Layout extends React.Component {
     return (
       <div>  
         {this.props.children}
-        <AboutUs />
+        
         <Contact />
         <Footer /> 
       </div>

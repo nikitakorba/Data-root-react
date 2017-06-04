@@ -6,8 +6,7 @@
 }
 
 .container {
-  margin: 0 auto;
-  padding: 20px 15px;
+  margin: 150px auto;
   max-width: var(--max-content-width);
   text-align: center;
 }
