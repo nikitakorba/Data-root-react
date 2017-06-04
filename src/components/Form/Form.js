@@ -13,12 +13,14 @@ const typeTel = 'tel';
 class Form extends React.Component {
   render() {
     return (
-      <div className={s.formContent}>
-        <input type={typeText} className={s.formInput} placeholder={plName} required />
-        <input type={typeTel} className={s.formInput} placeholder={plTel}required />
-        <input type={typeEmail} className={s.formInput} placeholder={plMail}required />
-        <textarea className={s.formTextarea} placeholder={plTextarea} required />
-        <BlackButton btnType={'submit'}>Зв’язатись</BlackButton>
+      <div>
+        <form className={s.formContent}>
+          <input type={typeText} className={s.formInput} placeholder={plName} required />
+          <input type={typeTel} className={s.formInput} placeholder={plTel}required />
+          <input type={typeEmail} className={s.formInput} placeholder={plMail}required />
+          <textarea className={s.formTextarea} placeholder={plTextarea} required />
+          <BlackButton btnType={'submit'}>Зв’язатись</BlackButton>
+        </form>
       </div>
     );
   }

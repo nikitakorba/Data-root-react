@@ -1,28 +1,102 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
 @import '../variables.css';
 
-:root {
-  background-color: #FFFFFF;
-  
+.root {
+  background: white;
+  color: #4f4f4f;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #4f4f4f;
+  text-decoration: none;
 }
 
 .container {
-  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(217, 216, 215, 0.2) 100%);
   margin: 0 auto;
+  padding: 20px 0;
   max-width: var(--max-content-width);
-}
-
-.header {
   display: flex;
-  height: 600px;
-  flex-direction: column;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
 }
 
-.headerTitle {
-  margin-top: 0px;
-  font-size: 2.25em; /* ~36px */
-  line-height: 3em; /* ~48px */
+.brandName {
+  font-size: 36px;
+  font-weight: bold;
 }
 
+.telNumber {
+  font-size: 24px;
+}
+
+.delivery {
+  font-size: 16px;
+}
+
+.language {
+  display: inline-flex;
+}
+
+.icon {
+  display: none;
+  font-size: 30px;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700px) {
+  .container .contactInfo {
+    display: none;
+  }
+
+  .container button {
+    display: none;
+  }
+
+  .container .language {
+    display: none;
+  }
+
+  .container .icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 700px) {
+  .responsive {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: var(--max-content-width);
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .responsive * {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 
