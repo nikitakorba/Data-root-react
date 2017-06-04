@@ -13,24 +13,28 @@ import table from './table.png';
 
 const ProductCatalogData = [
   {
+    id: 0,
     link: "/portrait",
     text: "Портрети",
     img: portrait,
     alt: "portrait"
   },
   {
+    id: 1,
     link: "/sculptur",
     text: "Скульптури",
     img: sculpture,
     alt: "sculpture"
   },
   {
+    id: 2,
     link: "/fireplaces",
     text: "Каміни",
     img: fireplaces,
     alt: "fireplaces"
   },
   {
+    id: 3,
     link: "/table",
     text: "Столешні",
     img: table,
@@ -55,7 +59,7 @@ class ProductCatalog extends React.Component {
       
             {
               ProductCatalogData.map(elem =>
-                <div className={s.item}> 
+                <div className={s.item} key={elem.id} id={elem.id}> 
                   <Photo source={elem.img} altText={elem.alt} />
                   <Link to={elem.link} className={s.link}> {elem.text} </Link>
                 </div>

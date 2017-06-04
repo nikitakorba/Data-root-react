@@ -20,6 +20,14 @@ const CatalogData = [
   { 
     id: 1,
     title: "Внутрішнє та зовнішнє оздоблення", 
+    navTitle: "Вид каменю:",
+    navLink: [
+      {
+        id: 100,
+        name: "мармур    граніт    пісковик    вапняк    квацит    онікс",
+      },
+      
+    ],
     img: [
       {
         id: 10,
@@ -135,6 +143,9 @@ class Catalog extends React.Component {
                       </div>
                   
                       <div className={s.leftContainer}>
+                  
+                        <div> {navTitle} </div>
+                  
                         <div className={s.imageWrapper}> {img} </div>
                       </div>
                   

@@ -5,7 +5,6 @@
 }
 
 .formInput {
-  box-sizing: border-box;
   width: 100%;
   max-width: 500px;
   min-height: 55px;
@@ -24,7 +23,6 @@
 }
 
 .formTextarea {
-  box-sizing: border-box;
   width: 100%;
   max-width: 500px;
   min-height: 120px;

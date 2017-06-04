@@ -13,10 +13,11 @@
 .btnWhite:active,
 .btnWhite:visited {
   color: rgba(60, 60, 67, 1); 
+  transition: 0.2s;
 }
 
 .btnWhite:hover {
-  color: rgba(60, 60, 67, 0.7);
-  border: 2px solid rgba(60, 60, 67, 0.7);
-  transition: 0.2s;
+  color: white;
+  background-color: rgb(60, 60, 67);
+  transition: 0.4s;
 }

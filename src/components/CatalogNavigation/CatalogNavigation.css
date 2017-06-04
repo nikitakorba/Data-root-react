@@ -18,11 +18,12 @@
 .link:active,
 .link:visited {
   color: #747880; 
+  transition: 0.2s;
 }
 
 .link:hover {
   color: rgba(60, 60, 67, 1);
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 
