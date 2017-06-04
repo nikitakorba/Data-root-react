@@ -24,8 +24,34 @@ const CatalogData = [
     navLink: [
       {
         id: 100,
-        name: "мармур    граніт    пісковик    вапняк    квацит    онікс",
+        name: "мармур",
+        to: "/catalog"
       },
+      {
+        id: 101,
+        name: "граніт",
+        to: "/catalog"
+      },
+      {
+        id: 102,
+        name: "пісковик",
+        to: "/catalog"
+      },
+      {
+        id: 103,
+        name: "вапняк",
+        to: "/catalog"
+      },
+      {
+        id: 104,
+        name: "квацит",
+        to: "/catalog"
+      },
+      {
+        id: 105,
+        name: "онікс",
+        to: "/catalog"
+      }
       
     ],
     img: [
@@ -70,6 +96,7 @@ const CatalogData = [
   {
     id: 2,
     title: "Складні архітектурні вироби", 
+    navLink: [],
     img: [
       { 
         id: 20,
@@ -98,6 +125,7 @@ const CatalogData = [
   {
     id: 3,
     title: "Садово-паркове мистецтво", 
+    navLink: [],
     img: [
       { 
         id: 30,
@@ -115,22 +143,35 @@ class Catalog extends React.Component {
   render () {
     return (
       <div className={s.root}>
+        <h1 className={s.title}>Каталог продукції</h1>
         <div className={s.container}>
-          
-          
-
+        
           <div className={s.rootInner}>  
             {
               CatalogData.map(function(elem) {
                 
                 let img = elem.img.map(function(image){
                   return (
-                     <img key={image.id} 
-                          src={image.source} 
-                          alt={image.altText} 
-                          width={image.width} 
-                          height={image.height}
+                     <img key = {image.id} 
+                          src = {image.source} 
+                          alt = {image.altText} 
+                          width = {image.width} 
+                          height = {image.height}
                       />
+                  )
+                });
+      
+                let navLink = elem.navLink.map(function(el) {
+                  return (
+                    
+                    
+                    
+                    <Link className={ s.link }
+                          key = {el.id}
+                          id = {el.id} 
+                          to = {el.to}
+                    > {el.name} </Link>
+                          
                   )
                 });
     
@@ -144,7 +185,10 @@ class Catalog extends React.Component {
                   
                       <div className={s.leftContainer}>
                   
-                        <div> {navTitle} </div>
+                        <div className={s.navWrap}> 
+                          {elem.navTitle} 
+                          {navLink}
+                        </div>
                   
                         <div className={s.imageWrapper}> {img} </div>
                       </div>
