@@ -23,7 +23,7 @@
 
 .title {
   font-size: 3em; /* ~48px */
-  margin: 20px 30px;
+  margin: 60px 30px 20px; 
 }
 
 .titleWrapper {
@@ -45,6 +45,14 @@
 
 .imageWrapper > img {
   padding: 10px;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.imageWrapper > img:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .leftContainer {

@@ -21,12 +21,20 @@
 .image {
   width: 441px;
   height: 535px;
+  opacity: 0.7;
+  transition: 0.2s;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.image:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .title {

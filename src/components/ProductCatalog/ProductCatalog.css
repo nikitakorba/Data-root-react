@@ -31,6 +31,17 @@
   margin-top: 30px;
 }
 
+.item > img {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.item > img:hover {
+  opacity: 1;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
 .link {
   padding-bottom: 0.625em; /* ~10px */
   font-size: 1.250em; /* ~20px */
