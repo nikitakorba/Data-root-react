@@ -52,9 +52,24 @@
   border-top: 1px solid black;
 }
 
-.link {
-  padding-left: 30px;
+.navWrap {
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+.link,
+.link:active,
+.link:visited {
+  text-decoration: none;
+  padding-left: 10px;
   font-size: 1em; /* ~16px */
+  transition: 0.1s;
+}
+
+.link:hover {
+  color: #F76868;
+  transition: 0.2s;
 }
 
 @media (max-width: 1100px) {
