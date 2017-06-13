@@ -40,3 +40,9 @@
   font-size: 20px;
   color: #3c3c43;
 }
+
+@media (max-width: 600px) {
+  .formContent {
+    margin: 0 30px;
+  }
+}

@@ -79,3 +79,9 @@
     padding-right: 30px;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    margin: 46px auto 0px;
+  }
+}

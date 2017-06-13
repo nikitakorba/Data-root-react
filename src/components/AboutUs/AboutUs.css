@@ -102,3 +102,9 @@
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    margin: 0px auto 30px;
+  }
+}
