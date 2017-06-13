@@ -32,7 +32,7 @@ class Header extends React.Component {
         <div className={this.state.active ? s.responsive : s.container}>
           <Link to="/"><h1 className={s.brandName}>Майстерня</h1></Link>
           <div className={s.contactInfo}>
-            <p className={s.telNumber}>+38 066 445 59 00</p>
+            <a className={s.telNumber} href="tel:+380664455900">+38 066 445 59 00</a>
             <p className={s.delivery}>Доставка по Україні</p>
           </div>
           <WhiteButton>Зв’язатись з нами</WhiteButton>

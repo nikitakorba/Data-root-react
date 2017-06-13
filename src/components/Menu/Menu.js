@@ -18,7 +18,7 @@ class Menu extends React.Component {
             <div className={s.textWrapper}>
               <span className={s.menuTitle}>Мастерня</span>
               <div>
-                <p className={s.phone}>+38 066 445 59 00</p>
+                <a className={s.phone} href="tel:+380664455900">+38 066 445 59 00</a>
                 <p className={s.address}>м. Мукачево, вул. Переяславська, 1</p>
               </div>
             </div>
