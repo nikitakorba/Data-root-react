@@ -2,9 +2,10 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Instagram.css';
 import Link from '../Link';
-import instaimage from './instaimage.png';
 import Photo from '../Photo';
 import WhiteButton from '../WhiteButton';
+
+const instaimage = "https://ucarecdn.com/16944521-198c-4205-9aee-cc61c99a7133/instaimage.png";
 
 class Instagram extends React.Component {
 

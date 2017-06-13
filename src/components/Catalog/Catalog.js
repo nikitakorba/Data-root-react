@@ -5,17 +5,6 @@ import s from './Catalog.css';
 import Link from '../Link';
 import CatalogHeader from '../CatalogHeader';
 
-import img from './img.png';
-import img2 from './img2.png';
-import img3 from './img3.png';
-import img4 from './img4.png';
-import img5 from './img5.png';
-
-import block2_img from './block2_img.png';
-import block2_img2 from './block2_img2.png';
-import block2_img3 from './block2_img3.png';
-
-import block3_img from './block3_img.png';
 
 const CatalogData = [
   { 
@@ -58,38 +47,28 @@ const CatalogData = [
     img: [
       {
         id: 10,
-        source: img, 
-        altText: "img",
-        width: "280",
-        height: "420"
+        source: "https://ucarecdn.com/8a71d0c3-480a-46a5-a3db-ab911af809a9/img.png", 
+        altText: "img"
       },
       {
         id: 11,
-        source: img2, 
-        altText: "img2",
-        width: "180",
-        height: "220"
+        source: "https://ucarecdn.com/cf6c3885-8eb7-4625-ae22-7999ba55ecff/img2.png", 
+        altText: "img2"
       },
        {
         id: 12,
-        source: img3, 
-        altText: "img3",
-        width: "180",
-        height: "180"
+        source: "https://ucarecdn.com/b51935bf-49d3-44aa-aca1-ee1990c136d7/img3.png", 
+        altText: "img3"
       },
        {
         id: 13,
-        source: img4, 
-        altText: "img4",
-        width: "380",
-        height: "160"
+        source: "https://ucarecdn.com/b16fe721-fe02-439c-ab13-277930e03685/img4.png", 
+        altText: "img4"
       },
        {
         id: 14,
-        source: img5, 
-        altText: "img5",
-        width: "380",
-        height: "240"
+        source: "https://ucarecdn.com/3bfd927a-8d6d-4653-a1fa-f7bf2058be67/img5.png", 
+        altText: "img5"
       }
     ]
   },
@@ -101,24 +80,18 @@ const CatalogData = [
     img: [
       { 
         id: 20,
-        source: block2_img, 
-        altText: "img",
-        width: "208",
-        height: "387"
+        source: "https://ucarecdn.com/7c9cbc43-7de1-447b-bc31-5fec940cc153/block2_img.png", 
+        altText: "img"
       },
       {
         id: 21,
-        source: block2_img2, 
-        altText: "img2",
-        width: "283",
-        height: "387"
+        source: "https://ucarecdn.com/d84c10a7-2a23-44fe-a6e6-bf3307576404/block2_img2.png", 
+        altText: "img2"
       },
       {
         id: 22,
-        source: block2_img3, 
-        altText: "img3",
-        width: "357",
-        height: "383"
+        source: "https://ucarecdn.com/762daf5f-8f96-430b-9d62-d7cef7aca5b1/block2_img3.png", 
+        altText: "img3"
       },
     ]
   },
@@ -130,10 +103,8 @@ const CatalogData = [
     img: [
       { 
         id: 30,
-        source: block3_img, 
-        altText: "img",
-        width: "860",
-        height: "387"
+        source: "https://ucarecdn.com/6521cd32-f42a-4bb6-98d9-ce7d13bda51c/block3_img.png", 
+        altText: "img"
       }
     ]
   }
@@ -159,8 +130,6 @@ class Catalog extends React.Component {
                      <img key = {image.id} 
                           src = {image.source} 
                           alt = {image.altText} 
-                          width = {image.width} 
-                          height = {image.height}
                       />
                   )
                 });
@@ -182,7 +151,7 @@ class Catalog extends React.Component {
                         <p > {elem.title} </p>
                       </div>
                   
-                      <div className={s.leftContainer}>
+                      <div className={s.rightContainer}>
                   
                         <div className={s.navWrap}> 
                           {elem.navTitle} 
