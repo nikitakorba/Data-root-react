@@ -54,12 +54,14 @@ class ProductCatalog extends React.Component {
       
             <div className={s.item}>
               <CatalogNavigation />
-              <WhiteButton children="Каталог продукції"/>
+              <Link to="/catalog"> 
+                <WhiteButton children="Каталог продукції"/>
+              </Link>
             </div>
       
             {
               ProductCatalogData.map(elem =>
-                <div className={s.item} key={elem.id} id={elem.id}> 
+                <div className={s.item} key={elem.id}> 
                   <Photo source={elem.img} altText={elem.alt} />
                   <Link to={elem.link} className={s.link}> {elem.text} </Link>
                 </div>

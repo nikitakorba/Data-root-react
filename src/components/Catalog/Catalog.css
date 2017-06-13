@@ -92,14 +92,18 @@
 }
 
 @media (max-width: 950px) {
-  .imageWrapper {
-    
+  .root {
+    overflow: hidden;
   }
   
   .leftContainer { 
-    min-width: 400px;
+    max-width: calc(100vw - 60px);
+    min-width: auto;
   }
-  .imageWrapper > img {
-    
+  
+  .imageWrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
 }
+

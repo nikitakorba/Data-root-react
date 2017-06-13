@@ -167,15 +167,10 @@ class Catalog extends React.Component {
       
                 let navLink = elem.navLink.map(function(el) {
                   return (
-                    
-                    
-                    
                     <Link className={ s.link }
                           key = {el.id}
-                          id = {el.id} 
                           to = {el.to}
                     > {el.name} </Link>
-                          
                   )
                 });
     
