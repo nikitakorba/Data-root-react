@@ -39,7 +39,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 420px;
+  height: 460px;
   width: 100%;
 }
 
@@ -55,8 +55,8 @@
   transition: 0.4s;
 }
 
-.leftContainer {
-  min-width: 880px;
+.rightContainer {
+  min-width: 900px;
   width: 100%;
   border-top: 1px solid black;
 }
@@ -96,7 +96,7 @@
     overflow: hidden;
   }
   
-  .leftContainer { 
+  .rightContainer { 
     max-width: calc(100vw - 60px);
     min-width: auto;
   }
