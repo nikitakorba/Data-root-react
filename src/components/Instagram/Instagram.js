@@ -53,9 +53,9 @@ class Instagram extends React.Component {
             </div>
           </div>
           <div className={s.btnWrapper}>
-            <WhiteButton>
-            Всі проекти
-            </WhiteButton>
+            <Link className={s.link} to="/catalog">
+              <WhiteButton>Всі проекти</WhiteButton>
+            </Link>
           </div>
         </div>
       </div>
