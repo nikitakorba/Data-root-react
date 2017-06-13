@@ -29,6 +29,12 @@
   max-width: 660px;
 }
 
+.map {
+  max-width: 660px;
+  width: 100%;
+  height: 320px;
+}
+
 .infoContainer {
   display: flex;
   flex-direction: column;
@@ -55,6 +61,7 @@
   font-size: 24px;
   margin: 0;
   margin-bottom: 5px;
+  text-decoration: none;
 }
 
 .contactsAdress {
