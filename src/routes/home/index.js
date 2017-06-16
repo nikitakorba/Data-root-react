@@ -22,11 +22,14 @@ export default {
   path: '/',
 
   async action() {
+    
+    
     return {
       component:  
         <Layout>
         <Header />
         <MenuBanner />
+        
         <ProductCatalog />
         <AboutUs />
         <Instagram />

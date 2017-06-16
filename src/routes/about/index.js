@@ -12,11 +12,12 @@ import Header from '../../components/Header';
 import Layout from '../../components/Layout';
 import MenuBanner from '../../components/MenuBanner';
 
+
 export default {
 
   path: '/about',
 
-  async action() {
+  async action() {  
     return {
       title: 'Про нас',
       component: 
