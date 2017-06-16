@@ -23,7 +23,7 @@
 
 .title {
   font-size: 3em; /* ~48px */
-  margin: 20px 30px;
+  margin: 60px 30px 20px; 
 }
 
 .titleWrapper {
@@ -39,16 +39,24 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 420px;
+  height: 460px;
   width: 100%;
 }
 
 .imageWrapper > img {
   padding: 10px;
+  opacity: 0.7;
+  transition: 0.2s;
 }
 
-.leftContainer {
-  min-width: 880px;
+.imageWrapper > img:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.rightContainer {
+  min-width: 900px;
   width: 100%;
   border-top: 1px solid black;
 }
@@ -84,14 +92,18 @@
 }
 
 @media (max-width: 950px) {
-  .imageWrapper {
-    
+  .root {
+    overflow: hidden;
   }
   
-  .leftContainer { 
-    min-width: 400px;
+  .rightContainer { 
+    max-width: calc(100vw - 60px);
+    min-width: auto;
   }
-  .imageWrapper > img {
-    
+  
+  .imageWrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
 }
+

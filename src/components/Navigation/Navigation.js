@@ -9,7 +9,7 @@ class Navigation extends React.Component {
       <div className={s.root} role="navigation">
         <Link className={s.link} to="/catalog">Каталог продукції</Link>
         <Link className={s.link} to="/about">Про нас</Link>
-        <Link className={s.link} to="/works">Наші роботи</Link>
+        <Link className={s.link} to="/catalog">Наші роботи</Link>
       </div>
     );
   }

@@ -10,20 +10,20 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Footer.css';
-import mapImage from './map.jpg';
 import Photo from '../Photo';
-import Navigation from '../Navigation/';
+import Navigation from '../Navigation';
+
 
 class Footer extends React.Component {
   render() {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <Photo source={mapImage} altText="map" />
+          <iframe className={s.map} src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJP4z6unisOUcRqsKSp9UA2gI&key=AIzaSyAKlGlFjWFEb1YfW6zMxMqHEVifAsCfmxk"></iframe>
           <div className={s.infoContainer}>
             <div className={s.contacts}>
               <h3 className={s.contactsHeadline}>Контакти</h3>
-              <p className={s.contactsTel}>+38 066 445 59 00</p>
+              <a className={s.contactsTel} href="tel:+380664455900">+38 066 445 59 00</a>
               <p className={s.contactsAdress}>м.Мукачево, вул. Переяславська, 1</p>
             </div>
             <Navigation />

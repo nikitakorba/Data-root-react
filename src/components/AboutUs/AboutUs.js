@@ -5,7 +5,7 @@ import s from './AboutUs.css';
 import Photo from '../Photo';
 import Link from '../Link';
 
-import about from './about.png';
+const img = "https://ucarecdn.com/488fde7f-9bf2-487d-90b8-778069fdf2f9/about.png";
 
 class AboutUs extends React.Component {
   
@@ -16,7 +16,7 @@ class AboutUs extends React.Component {
       <div className={s.root}>
         <div className={s.container}>
           <div className={s.imageWrapper}>
-            <img src={about} srcSet={`${about}`} width="100%" className={s.image} alt="logo" />
+            <img src={img} srcSet={`${img}`} width="100%" className={s.image} alt="logo" />
           </div>
           
           <div className={s.item + ' ' + s.wrapper}>
